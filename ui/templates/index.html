@@ -40,7 +40,7 @@
                     {% for stream in streams %}
                         {% if stream.mime_type == 'video/mp4' %}
                             {{ stream.itag }} - {{ stream.mime_type }} - {{ stream.resolution }} - {{ stream.filesize|filesizeformat }}
-                            <a class="btn btn-warning" href="download_video/{{ stream.itag }}">Video Link</a>
+                            <a class="btn btn-warning" href="download_video/{{ stream.itag }}">Download Video</a>
                         {% endif %}
                     {% endfor %}
                 </div>
