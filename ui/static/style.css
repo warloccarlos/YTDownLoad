@@ -1,0 +1,24 @@
+.text-color{
+    color: rgb(207, 15, 71);
+}
+.divrotate{
+    rotate: -20deg;
+    margin-top: 30px;
+}
+.nav a:hover{
+    background-color: rgb(3, 75, 75);
+}
+.gradient{
+    background: linear-gradient(to bottom, rgb(230 229 225) 25%, rgb(230 229 225) 25%, rgb(255 255 255) 50%, rgb(255 255 255) 75%);
+}
+.bg{
+    background: rgb(253, 235, 208);
+}
+#rwa-tab:hover{
+    background-color: rgb(3, 152, 179);
+    color: white;
+}
+#owners-tab:hover{
+    background-color: rgb(3, 152, 179);
+    color: white;
+}
