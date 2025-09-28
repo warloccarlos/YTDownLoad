@@ -26,6 +26,9 @@ flask run (--debug if on local)
 
 Need help to make it better and run online
 
+# Images
+This is how it looks when run on local environment
+
 <img width="809" height="653" alt="image" src="https://github.com/user-attachments/assets/d077fecb-d5be-47d9-be51-36e964967545" />
 
 <img width="814" height="918" alt="image" src="https://github.com/user-attachments/assets/58759e9c-ac11-44b7-bfc2-9b1d4a183cae" />
