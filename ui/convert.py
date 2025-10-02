@@ -1,14 +1,18 @@
+import os
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
 from flask import Blueprint, render_template, request, session, send_file
 
 link = Blueprint('link', __name__)
 
+home = os.path.expanduser("~")
+downloads = os.path.join(home, "Downloads")
+
 @link.route('/download_video/<itag>')
 def down_video(itag):
     yt = YouTube(session['link'], on_progress_callback=on_progress)
     video = yt.streams.get_by_itag(itag)
-    return render_template('result.html', file=video.download())
+    return send_file(os.path.join(downloads, video.download()))
 
 @link.route('/download_audio/<itag>')
 def down_audio(itag):
